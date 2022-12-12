@@ -1,3 +1,4 @@
+/* navbar et header  */
 header {
   background-color: white;
   box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
@@ -11,7 +12,7 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-columns: 0.7fr 1fr 0.3fr 1fr;
 }
 
 .image1 {
@@ -53,12 +54,66 @@ a {
   text-decoration: underline solid 3px #e49c86;
 }
 
+header nav .navbar-centre-droite a {
+  padding-right: 1.875em;
+  border-right: 1px solid #e1e1e1;
+}
+
 .navbar-droite {
   display: grid;
+  grid-template-columns: 3vw 3vw 3vw 3vw;
+  text-align: center;
+  margin-left: -5vw;
 }
 
 .listelogo {
-  height: 4vh;
+  height: 3vh;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+/* section */
+.section1 {
+  height: 280vh;
+  background-color: #EAE7E7;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-left: -10px;
+  margin-right: -10px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.main {
+  padding-top: 11.25rem;
+}
+
+.image2 {
+  background-size: cover;
+  width: 100%;
+}
+
+.main .section1 article ul {
+  list-style: none;
+}
+.main .section1 article ul li .rectangles {
+  background-color: red;
+  background-size: cover;
+  width: 115%;
+  border-radius: 5px;
+  display: flex;
+}
+
+.main .section1 article ul li a {
+  display: flex;
+  padding: 1px;
+}
+
+p {
+  margin-left: -23vw;
+  color: white;
+  font-weight: bold;
+  font-family: "DM Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
